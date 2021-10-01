@@ -6,4 +6,4 @@ We use data from BBC Weather website. The user has to enter the website url for 
 
 
 
-The data is converted to meaningful speech using text-to-sppech library in python with appropriate message.
+The data is converted to meaningful speech using text-to-speech library in python with appropriate message.
