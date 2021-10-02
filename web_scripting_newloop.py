@@ -1,23 +1,14 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[ ]:
 
 
 import requests
 import time
-
-
-# In[ ]:
-
 
 from bs4 import BeautifulSoup
 import smtplib
 import email.mime
 import datetime
 
-
-# In[ ]:
 
 
 import requests
@@ -29,13 +20,12 @@ from urllib.request import urlopen
 text_speech = pyttsx3.init()
 import time    
 
-
 for i in range(60):
  headers = {
     'User-Agent':"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36 Edg/94.0.992.31'"
  }
     
- url = "https://www.bbc.com/weather/287286" #Enter the weather link of the city that needs to be checked   
+ url = "https://www.bbc.com/weather/your-city-id" #Enter the weather link of the city that needs to be checked   
  t = time.localtime()
  current_hr = time.strftime("%H:%M", t)
  text_speech.say(current_hr)
@@ -59,12 +49,5 @@ for i in range(60):
  text_speech.say(cnt6)
  text_speech.runAndWait()
  print(current_hr)
- time.sleep(600) 
+ time.sleep(600)  #no of minutes 
     
-
-
-# In[ ]:
-
-
-
-
